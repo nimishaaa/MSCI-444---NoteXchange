@@ -5,9 +5,11 @@
 </head>
 <body>
 
-<p> <a href="index.html">Home</a> <p/>
+<h5> <a href="index.html">Home</a> </h5>
 	
 	<h2>Sign in to your NoteFinder Account</h2>
+	<div class="center">
+
 	<form name="login-form" class="login-form" method="post">
 	<label for="email">Account Number:</label>
 	<p> <input type="text" id="ID" name="ID" placeholder="Enter Account Number"></p>
@@ -15,20 +17,24 @@
 	<p> <input type="password" id="pwd" name="pwd" placeholder="Enter Password"></p>
 	<input type="submit" value="Submit">
 	</form>
+</div>
 
-<hr>
-<h3> Or </h3>
-<hr>
+<br>
+<h6> Or </h6>
+<br>
 
 	<form name="register-form" class="register-form" method="post">
 	<h2> Sign Up: Complete this form to create your NoteFinder Account</h2>
+	<div class="center">
+
 	<label for="email">Email:</label>
 	<p> <input type="text" placeholder="Enter Email" name="email" required> </p>
 	<label for="psw">Password:</label>
 	<p><input type="password" placeholder="Enter Password" name="psw" required></p>
 	<label for="psw-confirm">Confirm Password:</label>
 	<p> <input type="password" placeholder="Confirm Password" name="psw-confirm" required> </p>
-	<p><input type="checkbox" name="checkbox" value="check" id="agree"required> I agree to the <a href="#" id="agree-terms">terms &amp; conditions</a></p>
+	<p><input type="checkbox" name="checkbox" value="check" id="agree"required> I agree to the terms &amp; conditions.<br> <p> <a href="#" id="agree-terms"> Click here to view.</a> </p> </p>
+</div>
 
 	</form>
 		
@@ -68,48 +74,192 @@
 	}
 	</script>
 		
-	<style>
-	body {font-family: Arial, Helvetica, sans-serif;}
+			<style>
+				html {
+		overflow-x: hidden; }
 
-	/* The Modal (background) */
-	.modal {
-	  display: none; /* Hidden by default */
-	  position: fixed; /* Stay in place */
-	  z-index: 1; /* Sit on top */
-	  padding-top: 100px; /* Location of the box */
-	  left: 0;
-	  top: 0;
-	  width: 100%; /* Full width */
-	  height: 100%; /* Full height */
-	  overflow: auto; /* Enable scroll if needed */
-	  background-color: rgb(0,0,0); /* Fallback color */
-	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-	}
+			body {
+			line-height: 1.7;
+			font-weight: 300;
+			font-size: 1.1rem;
+			color: black; 
+			align-items: center;
+			margin: auto;
+			font-family: Roboto; 
 
-	/* Modal Content */
-	.modal-content {
-	  background-color: #fefefe;
-	  margin: auto;
-	  padding: 20px;
-	  border: 1px solid #888;
-	  width: 80%;
-	}
 
-	/* The Close Button */
-	.close {
-	  color: #aaaaaa;
-	  float: right;
-	  font-size: 28px;
-	  font-weight: bold;
-	}
+		}
+			h2{
+				font-size: 32px;
+				color:  black;
+				text-align: center;
+				font-weight: 900;
 
-	.close:hover,
-	.close:focus {
-	  color: #000;
-	  text-decoration: none;
-	  cursor: pointer;
-	}
-	</style>
+		}
+		h6{
+				font-size: 28px;
+				color:#b30000 ;
+				text-align: center;
+				font-weight: 900;
+
+		}
+		a{
+			text-decoration: none;
+			font-size: 18px;
+			color:  black;
+			font-weight: 200;
+			padding-left: 100px;
+
+		}
+		a:hover{
+			text-decoration: none;
+			font-size: 18px;
+			color:  red;
+			font-weight: 200;
+
+		}
+		label{
+			text-decoration: none;
+			font-size: 18px;
+			color:  black;
+			font-weight: 400;
+			
+
+		}
+		input[type=text], input[type=password]{
+			
+			
+				width: 830px;
+				height: 30px;
+				padding: 5px;
+				margin-bottom: 30px;
+				background: transparent;
+				border: none;
+				border-bottom: 1px solid grey;
+				opacity: 60%;
+			}
+			input::placeholder{
+			font-weight: 200;
+			font-size: 16px;
+			color: #000;
+			opacity: 60%;
+		}
+		input[type=submit]{
+			border-radius: 15px;
+			border-width: 1px;
+			border-color: transparent;
+			width: 380px;
+			height: 40px;
+			color: white;
+			font-family: Roboto; 
+			font-weight: 400;
+			font-size: 16px;
+			display: block;
+			background-color:#b30000;
+			box-shadow: 2px 2px 2px #888888;
+			text-align: center;
+			margin-right: 20px;
+			margin-top: 10px;
+		}
+
+		button{
+			border-radius: 15px;
+			border-width: 1px;
+			border-color: transparent;
+			width: 380px;
+			height: 40px;
+			color: white;
+			font-family: Roboto; 
+			font-weight: 400;
+			font-size: 16px;
+			display: block;
+			background-color:#b30000;
+			box-shadow: 2px 2px 2px #888888;
+			text-align: center;
+			margin-right: 20px;
+			margin-top: 10px;
+		}
+		select{
+			border-radius: 25px;
+			border-width: 1px;
+			border-color: transparent;
+			width: 380px;
+			height: 40px;
+			color: white;
+			font-family: Roboto; 
+			font-weight: 400;
+			font-size: 16px;
+			display: block;
+			background-color:#b30000;
+			box-shadow: 2px 2px 2px #888888;
+			text-align: center;
+			margin-right: 20px;
+			margin-top: 10px;
+		}
+		input[type=submit]:hover {
+			background-color:red;
+			box-shadow: 0px 15px 20px rgb(235,235,235);
+			color: #fff;
+		}
+		button:hover {
+			background-color:red;
+			box-shadow: 0px 15px 20px rgb(235,235,235);
+			color: #fff;
+		}
+
+
+			/* The Modal (background) */
+			.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
+
+			/* Modal Content */
+			.modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+			}
+
+			/* The Close Button */
+			.close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+			}
+			.center{
+			margin: auto;
+			padding-top: 30px;
+			text-align: left;
+			padding-left: 300px;
+			}
+			.clearfix{
+			margin: auto;
+			padding-top: 30px;
+			text-align: left;
+			padding-left: 300px;
+			padding-bottom: 100px;
+			}
+			</style>
 	
 	</div>
 	
